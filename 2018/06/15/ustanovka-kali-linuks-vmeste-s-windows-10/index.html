@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru-RU" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Установка Kali Linux вместе с Windows10: подробная инструкция</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.5.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Как установить Kali Linux вместе с Windows 10. Подробная пошаговая инструкция установки Кали Линукс с фото. Подойдет даже новичкам!"/>
+<link rel="canonical" href="https://kali-linuks.ru/2018/06/15/ustanovka-kali-linuks-vmeste-s-windows-10/" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Установка Kali Linux вместе с Windows10: подробная инструкция" />
+<meta property="og:description" content="Как установить Kali Linux вместе с Windows 10. Подробная пошаговая инструкция установки Кали Линукс с фото. Подойдет даже новичкам!" />
+<meta property="og:url" content="https://kali-linuks.ru/2018/06/15/ustanovka-kali-linuks-vmeste-s-windows-10/" />
+<meta property="article:section" content="Установка" />
+<meta property="article:published_time" content="2018-06-15T07:53:11+00:00" />
+<meta property="article:modified_time" content="2018-07-11T14:21:46+00:00" />
+<meta property="og:updated_time" content="2018-07-11T14:21:46+00:00" />
+<meta property="og:image" content="https://kali-linuks.ru/wp-content/uploads/2018/06/5-1.jpg" />
+<meta property="og:image:secure_url" content="https://kali-linuks.ru/wp-content/uploads/2018/06/5-1.jpg" />
+<meta property="og:image:width" content="850" />
+<meta property="og:image:height" content="478" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Как установить Kali Linux вместе с Windows 10. Подробная пошаговая инструкция установки Кали Линукс с фото. Подойдет даже новичкам!" />
+<meta name="twitter:title" content="Установка Kali Linux вместе с Windows10: подробная инструкция" />
+<meta name="twitter:image" content="https://kali-linuks.ru/wp-content/uploads/2018/06/5-1.jpg" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/kali-linuks.ru\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.18"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-postratings-group-css' href='https://kali-linuks.ru/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/wp-postratings/css/postratings-css.css,wp-content/themes/root/css/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A400%2C400i%2C700&#038;subset=cyrillic&#038;ver=4.9.18' type='text/css' media='all' />
+<script type='text/javascript' src='https://kali-linuks.ru/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://kali-linuks.ru/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://kali-linuks.ru/wp-json/' />
+<link rel="alternate" type="application/json+oembed" href="https://kali-linuks.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkali-linuks.ru%2F2018%2F06%2F15%2Fustanovka-kali-linuks-vmeste-s-windows-10%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://kali-linuks.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkali-linuks.ru%2F2018%2F06%2F15%2Fustanovka-kali-linuks-vmeste-s-windows-10%2F&#038;format=xml" />
+<style>body { background-image: url(https://kali-linuks.ru/wp-content/themes/root/images/backgrounds/wood-2.jpg) }@media (min-width: 768px) {.site-header { background-repeat: repeat; }}@media (min-width: 768px) {.site-header { background-position: center center; }}@media (min-width: 768px) {.site-header { padding-top: 20px; }}@media (min-width: 768px) {.site-header { padding-bottom: 10px; }}.page-separator, .pagination .current, .pagination a.page-numbers:hover, .entry-content ul > li:before, .btn, .comment-respond .form-submit input, .mob-hamburger span, .page-links__item { background-color: #3c2a63;}.spoiler-box, .entry-content ol li:before, .mob-hamburger, .inp:focus, .search-form__text:focus, .entry-content blockquote { border-color: #3c2a63;}.entry-content blockquote:before, .spoiler-box__title:after, .sidebar-navigation .menu-item-has-children:after { color: #3c2a63;}a, .spanlink, .comment-reply-link, .pseudo-link, .root-pseudo-link { color: #4d0eba;}a:hover, a:focus, a:active, .spanlink:hover, .comment-reply-link:hover, .pseudo-link:hover { color: #c4460b;}body { color: #000000;}.site-title, .site-title a { color: #3414d1;}.main-navigation, .footer-navigation, .main-navigation ul li .sub-menu, .footer-navigation ul li .sub-menu { background-color: #1f105e;}.main-navigation ul li a, .main-navigation ul li .removed-link, .footer-navigation ul li a, .footer-navigation ul li .removed-link { color: #ffffff;}body { font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, Arial, sans-serif; }.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-image__title h1, .entry-title { font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, Arial, sans-serif; }@media (min-width: 576px) { body { font-size: 16px;} }@media (min-width: 576px) { body { line-height: 1.5;} }@media (max-width: 991px) { .widget-area {display: block; float: none !important; padding: 15px 20px;} }.scrolltop { background-color: #afafaf;}.scrolltop:after { color: #ffffff;}.scrolltop { width: 54px;}.scrolltop { height: 54px;}.scrolltop:after { content: "\f102"; }</style><meta name="google-site-verification" content="UGBlMOTP3o80ieAiJV3UXWWmIyWlI7-zFUHJsOmYFV0" />
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2367196987428562",
+          enable_page_level_ads: true
+     });
+</script>
+
+<meta name="google-site-verification" content="UGBlMOTP3o80ieAiJV3UXWWmIyWlI7-zFUHJsOmYFV0" />
+<meta name="yandex-verification" content="afe9322ba24f7b09" />
+ROEF4E-A229A6-F149850B8E6743BB61-2D20</head>
+
+<body class="post-template-default single single-post postid-252 single-format-standard ">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#main">Перейти к контенту</a>
+
+    
+    <header id="masthead" class="site-header container" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="site-header-inner ">
+        <div class="site-branding">
+            <div class="site-logotype"><a href="https://kali-linuks.ru/"><img src="https://kali-linuks.ru/wp-content/uploads/2018/05/1.png" alt=""></a></div>
+                    </div><!-- .site-branding -->
+
+        
+        
+        <div class="top-menu">
+                    </div>
+
+        
+        <div class="mob-hamburger"><span></span></div>
+    </div><!--.site-header-inner-->
+</header><!-- #masthead -->
+    
+
+
+    
+    
+    <nav id="site-navigation" class="main-navigation container">
+        <div class="main-navigation-inner ">
+            <div class="menu-menyu1-container"><ul id="header_menu" class="menu"><li id="menu-item-60" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-60"><a href="https://kali-linuks.ru/category/zagruzka/">Загрузка</a></li>
+<li id="menu-item-62" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-62"><a href="https://kali-linuks.ru/category/ustanovka/">Установка</a></li>
+<li id="menu-item-61" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-61"><a href="https://kali-linuks.ru/category/nastrojka/">Настройка</a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-59"><a href="https://kali-linuks.ru/category/distributivy/">Дистрибутивы</a></li>
+<li id="menu-item-125" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-125"><a href="https://kali-linuks.ru/category/android/">Андроид</a></li>
+</ul></div>        </div><!--.main-navigation-inner-->
+    </nav><!-- #site-navigation -->
+
+    
+
+    
+	<div id="content" class="site-content container">
+
+        
+
+<div itemscope itemtype="http://schema.org/Article">
+
+    
+    
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+            <div class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><span class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://kali-linuks.ru/" itemscope itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></span> <span class="breadcrumb-separator">»</span> <span class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://kali-linuks.ru/category/ustanovka/" itemscope itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Установка</span></a><meta itemprop="position" content="2"></span></div>
+			
+<article id="post-252" class="post-252 post type-post status-publish format-standard has-post-thumbnail  category-ustanovka">
+
+    
+        <header class="entry-header">
+                        <h1 class="entry-title" itemprop="headline">Установка Кали Линукс вместе с Windows 10</h1>            
+            
+                        <div class="entry-meta">
+                <span class="entry-category"><span class="hidden-xs">Рубрика:</span> <a href="https://kali-linuks.ru/category/ustanovka/" itemprop="articleSection">Установка</a></span><span class="b-share b-share--small">
+
+
+<span class="b-share__ico b-share__vk js-share-link" data-uri="https://vk.com/share.php?url=https%3A%2F%2Fkali-linuks.ru%2F2018%2F06%2F15%2Fustanovka-kali-linuks-vmeste-s-windows-10%2F"></span>
+
+
+<span class="b-share__ico b-share__fb js-share-link" data-uri="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fkali-linuks.ru%2F2018%2F06%2F15%2Fustanovka-kali-linuks-vmeste-s-windows-10%2F"></span>
+
+
+<span class="b-share__ico b-share__tw js-share-link" data-uri="https://twitter.com/share?text=%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0+%D0%9A%D0%B0%D0%BB%D0%B8+%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81+%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B5+%D1%81+Windows+10&url=https%3A%2F%2Fkali-linuks.ru%2F2018%2F06%2F15%2Fustanovka-kali-linuks-vmeste-s-windows-10%2F"></span>
+
+
+<span class="b-share__ico b-share__ok js-share-link" data-uri="https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&service=odnoklassniki&st.shareUrl=https%3A%2F%2Fkali-linuks.ru%2F2018%2F06%2F15%2Fustanovka-kali-linuks-vmeste-s-windows-10%2F"></span>
+
+
+<span class="b-share__ico b-share__gp js-share-link" data-uri="https://plus.google.com/share?url=https%3A%2F%2Fkali-linuks.ru%2F2018%2F06%2F15%2Fustanovka-kali-linuks-vmeste-s-windows-10%2F"></span>
+
+
+<span class="b-share__ico b-share__whatsapp js-share-link js-share-link-no-window" data-uri="whatsapp://send?text=%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0+%D0%9A%D0%B0%D0%BB%D0%B8+%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81+%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B5+%D1%81+Windows+10%20https%3A%2F%2Fkali-linuks.ru%2F2018%2F06%2F15%2Fustanovka-kali-linuks-vmeste-s-windows-10%2F"></span>
+
+
+<span class="b-share__ico b-share__viber js-share-link js-share-link-no-window" data-uri="viber://forward?text=%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0+%D0%9A%D0%B0%D0%BB%D0%B8+%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81+%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B5+%D1%81+Windows+10%20https%3A%2F%2Fkali-linuks.ru%2F2018%2F06%2F15%2Fustanovka-kali-linuks-vmeste-s-windows-10%2F"></span>
+
+
+<span class="b-share__ico b-share__telegram js-share-link js-share-link-no-window" data-uri="https://telegram.me/share/url?url=https%3A%2F%2Fkali-linuks.ru%2F2018%2F06%2F15%2Fustanovka-kali-linuks-vmeste-s-windows-10%2F&text=%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0+%D0%9A%D0%B0%D0%BB%D0%B8+%D0%9B%D0%B8%D0%BD%D1%83%D0%BA%D1%81+%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B5+%D1%81+Windows+10"></span>
+
+</span>            </div><!-- .entry-meta -->
+                    </header><!-- .entry-header -->
+
+
+                    <div class="entry-image">
+                <img width="850" height="478" src="https://kali-linuks.ru/wp-content/uploads/2018/06/5-1.jpg" class="attachment-full size-full wp-post-image" alt="" itemprop="image" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/5-1.jpg 850w, https://kali-linuks.ru/wp-content/uploads/2018/06/5-1-300x169.jpg 300w, https://kali-linuks.ru/wp-content/uploads/2018/06/5-1-768x432.jpg 768w" sizes="(max-width: 850px) 100vw, 850px" />            </div>
+        
+    
+	<div class="entry-content" itemprop="articleBody">
+		<div class="b-r b-r--before-article"><!-- Composite Start -->
+<div id="M638311ScriptRootC1007343">
+</div>
+<script src="https://jsc.mgid.com/k/a/kali-linuks.ru.1007343.js" async></script>
+<!-- Composite End --></div><p>Хакерский Kali Linux удобно использовать в качестве дополнительной системы, оставив на ПК и привычную Windows10. Для этого нужно установить дистрибутив Kali вместе с Windows. Давайте разберемся, как производится установка Linux в режиме Dual Boot – то есть когда можно загрузиться в любую систему по вкусу.</p>
+<div class="table-of-contents open"><div class="table-of-contents__header"><span class="table-of-contents__hide js-table-of-contents-hide">Содержание</span></div><ol class="table-of-contents__list js-table-of-contents-list">
+<li class="level-1"><a href="#ustanovka-kali-linux">Установка Kali Linux</a></li><li class="level-2"><a href="#podgotovka">Подготовка</a></li><li class="level-2"><a href="#ustanovka-na-neraspredelennoe-mesto">Установка на нераспределенное место</a></li></ul></div><h2 id="ustanovka-kali-linux">Установка Kali Linux</h2>
+<p>Линукс и Windows10 не могут использовать один и тот же раздел. Поэтому для совместной установки потребуется выделить свободное место для Kali Linux. Сделать это можно прямо из установленной Windows10.</p><div class="b-r b-r--after-p"><!-- Composite Start -->
+<div id="M415687ScriptRootC1007112">
+</div>
+<script src="https://jsc.mgid.com/s/p/spleten-net.ru.1007112.js" async></script>
+<!-- Composite End --></div>
+<h3 id="podgotovka">Подготовка</h3>
+<p>Сначала нужно открыть инструмент для управления Windows10 – например, через правый клик по иконке компьютера на рабочем столе.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-253" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_1-8.png" alt="" width="362" height="300" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_1-8.png 362w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_1-8-300x249.png 300w" sizes="(max-width: 362px) 100vw, 362px" /><meta itemprop="width" content="362"><meta itemprop="height" content="300"></span></p>
+<p>Потребуется перейти в раздел «Управление дисками».</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-254" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_2-8.png" alt="" width="646" height="465" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_2-8.png 646w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_2-8-300x216.png 300w" sizes="(max-width: 646px) 100vw, 646px" /><meta itemprop="width" content="646"><meta itemprop="height" content="465"></span></p>
+<p>Видно, что все место на диске выделено под раздел с Windows10.</p><div class="b-r b-r--after-p"><!-- Composite Start -->
+<div id="M638311ScriptRootC1007346">
+</div>
+<script src="https://jsc.mgid.com/k/a/kali-linuks.ru.1007346.js" async></script>
+<!-- Composite End --></div>
+<p>Теперь нужно выбрать «Сжать том» для диска С: (на нем стоит Windows10) из контекстного меню…</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-255" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_3-8.png" alt="" width="646" height="465" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_3-8.png 646w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_3-8-300x216.png 300w" sizes="(max-width: 646px) 100vw, 646px" /><meta itemprop="width" content="646"><meta itemprop="height" content="465"></span></p>
+<p>Или через меню «Действие».</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-256" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_4-8.png" alt="" width="646" height="464" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_4-8.png 646w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_4-8-300x215.png 300w" sizes="(max-width: 646px) 100vw, 646px" /><meta itemprop="width" content="646"><meta itemprop="height" content="464"></span></p>
+<p>Откроется окно, в котором необходимо указать размер сжимаемого пространства.</p><div class="b-r b-r--after-p"><!-- Composite Start -->
+<div id="M638311ScriptRootC1007352">
+</div>
+<script src="https://jsc.mgid.com/k/a/kali-linuks.ru.1007352.js" async></script>
+<!-- Composite End --></div>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-257" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_5-8.png" alt="" width="454" height="311" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_5-8.png 454w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_5-8-300x206.png 300w" sizes="(max-width: 454px) 100vw, 454px" /><meta itemprop="width" content="454"><meta itemprop="height" content="311"></span></p>
+<p>Для установки полной версии Kali рекомендуется высвободить как минимум 20 гигабайт, с Light версией Kali Linux можно попробовать установить и на меньшее пространство.</p>
+<p>После сжатия должна появиться область, на которой написано «Не распределена». Именно в нее и будет производиться установка Kali Linux.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-258" style="line-height: 1.5;" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_6-8.png" alt="" width="645" height="462" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_6-8.png 645w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_6-8-300x215.png 300w" sizes="(max-width: 645px) 100vw, 645px" /><meta itemprop="width" content="645"><meta itemprop="height" content="462"></span></p>
+<p>Теперь можно перезагружаться и запускать инсталлятор Kali с флешки или с DVD.</p><div class="b-r b-r--after-p"><!-- Composite Start -->
+<div id="M638311ScriptRootC1007346">
+</div>
+<script src="https://jsc.mgid.com/k/a/kali-linuks.ru.1007346.js" async></script>
+<!-- Composite End --></div>
+<blockquote class="quote"><p>Рекомендуем узнать:</p>
+<ul>
+<li><em><a href="https://kali-linuks.ru/2018/06/14/nastrojka-kali-linuks-posle-ustanovki-poshagovaya-instruktsiya/">Как настроить Кали Линукс после установки</a></em></li>
+<li><a href="https://kali-linuks.ru/2018/06/09/kak-ustanovit-kali-linuks-na-fleshku/"><em>Как установить Кали Линукс на флешку</em></a></li>
+<li><a href="https://kali-linuks.ru/2018/06/09/kak-skachat-i-ustanovit-kali-linuks-na-android/"><em>Как установить Кали Линукс на Андроид</em></a></li>
+</ul>
+</blockquote>
+<h3 id="ustanovka-na-neraspredelennoe-mesto">Установка на нераспределенное место</h3>
+<p>Большая часть шагов в точности совпадает с действиями при обычной установке.</p>
+<p>Необходимо загрузиться с носителя Kali Linux и выбрать пункт Graphical Install.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-259" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_7-8.png" alt="" width="643" height="480" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_7-8.png 643w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_7-8-300x224.png 300w" sizes="(max-width: 643px) 100vw, 643px" /><meta itemprop="width" content="643"><meta itemprop="height" content="480"></span></p>
+<p>Затем выбрать язык. Он будет использоваться во время установки и для работы в Kali Linux. При желании его можно будет поменять в настройках.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-260" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_8-8.png" alt="" width="639" height="482" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_8-8.png 639w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_8-8-300x226.png 300w" sizes="(max-width: 639px) 100vw, 639px" /><meta itemprop="width" content="639"><meta itemprop="height" content="482"></span></p>
+<p>Система предупредит, что перевод может быть неполным. Бояться этого не стоит, на русском вся необходимая информация корректно показывается. А вот с менее распространенными языками может и не повезти.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-261" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_9-8.png" alt="" width="643" height="484" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_9-8.png 643w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_9-8-300x226.png 300w" sizes="(max-width: 643px) 100vw, 643px" /><meta itemprop="width" content="643"><meta itemprop="height" content="484"></span></p>
+<p>Затем нужно указать раскладку клавиатуры.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-262" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_10-8.png" alt="" width="642" height="481" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_10-8.png 642w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_10-8-300x225.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><meta itemprop="width" content="642"><meta itemprop="height" content="481"></span></p>
+<p>И выбрать способ смены раскладки.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-263" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_11-7.png" alt="" width="642" height="482" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_11-7.png 642w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_11-7-300x225.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><meta itemprop="width" content="642"><meta itemprop="height" content="482"></span></p>
+<p>После этого установщик Linux попробует настроить сеть в автоматическом режиме.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-264" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_12-7.png" alt="" width="641" height="480" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_12-7.png 641w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_12-7-300x225.png 300w" sizes="(max-width: 641px) 100vw, 641px" /><meta itemprop="width" content="641"><meta itemprop="height" content="480"></span></p>
+<p>Если у него это получится, будет предложено ввести имя компьютера (для работы из-под Kali Linux).</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-265" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_13-7.png" alt="" width="642" height="479" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_13-7.png 642w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_13-7-300x224.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><meta itemprop="width" content="642"><meta itemprop="height" content="479"></span></p>
+<p>При необходимости можно указать домен. Если непонятно, что это такое – не нужно вводить ничего.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-266" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_14-7.png" alt="" width="640" height="480" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_14-7.png 640w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_14-7-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><meta itemprop="width" content="640"><meta itemprop="height" content="480"></span></p>
+<p>После этого потребуется ввести пароль для супер пользователя Kali.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-267" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_15-7.png" alt="" width="641" height="480" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_15-7.png 641w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_15-7-300x225.png 300w" sizes="(max-width: 641px) 100vw, 641px" /><meta itemprop="width" content="641"><meta itemprop="height" content="480"></span></p>
+<p>Также потребуется указать часовой пояс.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-268" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_16-5.png" alt="" width="641" height="480" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_16-5.png 641w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_16-5-300x225.png 300w" sizes="(max-width: 641px) 100vw, 641px" /><meta itemprop="width" content="641"><meta itemprop="height" content="480"></span></p>
+<p>Следующий шаг установки Kali c Windows10 самый важный: на этапе разметки дисков нужно указать инсталлятору, как установить Linux. Поскольку ранее было подготовлено неиспользуемое пространство, необходимо выбрать пункт «Авто – использовать наибольшее свободное место».</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-269" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_17-5.png" alt="" width="641" height="479" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_17-5.png 641w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_17-5-300x224.png 300w" sizes="(max-width: 641px) 100vw, 641px" /><meta itemprop="width" content="641"><meta itemprop="height" content="479"></span></p>
+<blockquote class="warning"><p>Важно! Если на этом шаге ошибиться и указать любой из вариантов с использованием всего диска, Windows10 будет стерта. Kali Linux удалит разделы, переформатирует их и запишет свои данные. Восстановить что-либо после этого достаточно проблематично.</p></blockquote>
+<p>По умолчанию предлагается все данные Linux поместить в единственном новом разделе. Можно согласиться или вынести часть системы на отдельные разделы.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-270" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_18-5.png" alt="" width="643" height="483" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_18-5.png 643w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_18-5-300x225.png 300w" sizes="(max-width: 643px) 100vw, 643px" /><meta itemprop="width" content="643"><meta itemprop="height" content="483"></span></p>
+<p>Установщик покажет будущую структуру (разделы Windows10 отображаются с типом ntfs).</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-271" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_19-5.png" alt="" width="643" height="480" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_19-5.png 643w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_19-5-300x224.png 300w" sizes="(max-width: 643px) 100vw, 643px" /><meta itemprop="width" content="643"><meta itemprop="height" content="480"></span></p>
+<p>Необходимо подтвердить внесение изменений.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-272" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_20-5.png" alt="" width="641" height="481" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_20-5.png 641w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_20-5-300x225.png 300w" sizes="(max-width: 641px) 100vw, 641px" /><meta itemprop="width" content="641"><meta itemprop="height" content="481"></span></p>
+<p>Начнется установка Kali Linux.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-273" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_21-2.png" alt="" width="640" height="477" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_21-2.png 640w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_21-2-300x224.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><meta itemprop="width" content="640"><meta itemprop="height" content="477"></span></p>
+<p>Под конец Kali Linux спросит, использовать ли зеркало архива. Если образ скачивался давно, могли появиться обновления для программ и стоит подключить репозиторий Linux.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-274" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_22-3.png" alt="" width="642" height="482" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_22-3.png 642w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_22-3-300x225.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><meta itemprop="width" content="642"><meta itemprop="height" content="482"></span></p>
+<p>Если используется прокси – нужно ввести его параметры.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-275" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_23-3.png" alt="" width="641" height="480" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_23-3.png 641w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_23-3-300x225.png 300w" sizes="(max-width: 641px) 100vw, 641px" /><meta itemprop="width" content="641"><meta itemprop="height" content="480"></span></p>
+<p>Наконец, необходимо установить на диск загрузчик GRUB – именно он позволяет корректно поставить Linux рядом с Windows10 и выбирать, какую ОС запустить.</p>
+<p>Инсталлятор Kali должен сам обнаружить установленную Windows10 (может отображаться как Vista).</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-276" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_24-1.png" alt="" width="640" height="480" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_24-1.png 640w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_24-1-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><meta itemprop="width" content="640"><meta itemprop="height" content="480"></span></p>
+<p>Дальше нужно указать место записи GRUB. Типичный вариант установки – в главный раздел диска. Для единственного накопителя это будет /dev/sda.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-277" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_25-1.png" alt="" width="641" height="481" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_25-1.png 641w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_25-1-300x225.png 300w" sizes="(max-width: 641px) 100vw, 641px" /><meta itemprop="width" content="641"><meta itemprop="height" content="481"></span></p>
+<p>Установщик самостоятельно пропишет загрузчик Kali.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-278" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_26-1.png" alt="" width="641" height="480" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_26-1.png 641w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_26-1-300x225.png 300w" sizes="(max-width: 641px) 100vw, 641px" /><meta itemprop="width" content="641"><meta itemprop="height" content="480"></span></p>
+<p>После этого появится сообщение о завершении установки Linux. Нужно убрать носитель, с которого выполнялась установка Kali.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-279" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_27-1.png" alt="" width="642" height="481" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_27-1.png 642w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_27-1-300x225.png 300w" sizes="(max-width: 642px) 100vw, 642px" /><meta itemprop="width" content="642"><meta itemprop="height" content="481"></span></p>
+<p>Напоследок инсталлятор Kali приберет за собой, чтобы в системе не оставалось ничего лишнего.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-280" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_28.png" alt="" width="644" height="480" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_28.png 644w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_28-300x224.png 300w" sizes="(max-width: 644px) 100vw, 644px" /><meta itemprop="width" content="644"><meta itemprop="height" content="480"></span></p>
+<p>После перезагрузки отобразится меню GRUB. Kali Linux прописывает себя в качестве варианта по умолчанию. На выбор Windows10 дается несколько секунд.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-281" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_29.png" alt="" width="641" height="482" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_29.png 641w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_29-300x226.png 300w" sizes="(max-width: 641px) 100vw, 641px" /><meta itemprop="width" content="641"><meta itemprop="height" content="482"></span></p>
+<p>Если выбрать Кали Линукс, то вскоре отобразится форма входа. Логин по умолчанию root, пароль – тот, который был указан во время установки.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-282" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_30.png" alt="" width="639" height="481" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_30.png 639w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_30-300x226.png 300w" sizes="(max-width: 639px) 100vw, 639px" /><meta itemprop="width" content="639"><meta itemprop="height" content="481"></span></p>
+<p>Откроется рабочий стол Kali Linux. Ниже показано, как он выглядит для версии Light.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-283" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_31.png" alt="" width="640" height="479" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_31.png 640w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_31-300x225.png 300w" sizes="(max-width: 640px) 100vw, 640px" /><meta itemprop="width" content="640"><meta itemprop="height" content="479"></span></p>
+<p>Обратите внимание, что файловая система доступна в полном объеме, включая созданные в Windows10 разделы.</p>
+<p>Если же в меню GRUB выбрать Windows10, то начнется загрузка ОС от Microsoft.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-284" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_32.png" alt="" width="644" height="484" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_32.png 644w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_32-300x225.png 300w" sizes="(max-width: 644px) 100vw, 644px" /><meta itemprop="width" content="644"><meta itemprop="height" content="484"></span></p>
+<p>А вот Windows10 не может полноценно работать с линуксовыми разделами. При этом в диспетчере дисков они отображаются.</p>
+<p><span itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" class="alignnone size-full wp-image-285" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_33.png" alt="" width="639" height="459" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_33.png 639w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_33-300x215.png 300w" sizes="(max-width: 639px) 100vw, 639px" /><meta itemprop="width" content="639"><meta itemprop="height" content="459"></span></p><div class="b-r b-r--after-article"><!-- Composite Start -->
+<div id="M638311ScriptRootC1007343">
+</div>
+<script src="https://jsc.mgid.com/k/a/kali-linuks.ru.1007343.js" async></script>
+<!-- Composite End --></div>	</div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+
+
+
+<div class="entry-footer">
+            <span class="entry-meta__comments" title="Комментариев"><span class="fa fa-comment-o"></span> 1</span>
+    
+    
+    
+    </div>
+
+
+
+
+        <div class="b-related">
+            <div class="b-related__header"><span>Вам также может быть интересно</span></div>
+            <div class="b-related__items">
+
+                
+                    
+<div id="post-335" class="post-card post-335 post type-post status-publish format-standard has-post-thumbnail  category-ustanovka">
+
+    <div class="post-card__image">
+        <a href="https://kali-linuks.ru/2018/06/19/ustanovka-kali-linuks-live-usb/">
+                            <img width="330" height="140" src="https://kali-linuks.ru/wp-content/uploads/2018/06/5-330x140.png" class="attachment-thumb-wide size-thumb-wide wp-post-image" alt="" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/5-330x140.png 330w, https://kali-linuks.ru/wp-content/uploads/2018/06/5-770x330.png 770w" sizes="(max-width: 330px) 100vw, 330px" />            
+
+            
+                
+                <div class="entry-meta">
+                    <span class="entry-category"><span itemprop="articleSection">Установка</span></span>                    <span class="entry-meta__info">
+                                                <span class="entry-meta__comments" title="Комментариев"><span class="fa fa-comment-o"></span> 1</span>
+                        
+                                                                                            </span>
+                </div><!-- .entry-meta -->
+                    </a>
+    </div>
+
+
+	<header class="entry-header">
+		<div class="entry-title"><a href="https://kali-linuks.ru/2018/06/19/ustanovka-kali-linuks-live-usb/" rel="bookmark" >Установка Кали Линукс Live USB</a></div>	</header><!-- .entry-header -->
+
+    	<div class="post-card__content">
+		Когда нужно аккуратно проверить систему и оставить жесткий диск нетронутым, выручит Kali Linux Live	</div><!-- .entry-content -->
+    
+</div><!-- #post-## -->
+
+                
+                    
+<div id="post-291" class="post-card post-291 post type-post status-publish format-standard has-post-thumbnail  category-ustanovka">
+
+    <div class="post-card__image">
+        <a href="https://kali-linuks.ru/2018/06/16/kak-ustanovit-kali-linuks-na-virtualbox/">
+                            <img width="330" height="140" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_40-330x140.png" class="attachment-thumb-wide size-thumb-wide wp-post-image" alt="" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_40-330x140.png 330w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_40-770x330.png 770w" sizes="(max-width: 330px) 100vw, 330px" />            
+
+            
+                
+                <div class="entry-meta">
+                    <span class="entry-category"><span itemprop="articleSection">Установка</span></span>                    <span class="entry-meta__info">
+                                                <span class="entry-meta__comments" title="Комментариев"><span class="fa fa-comment-o"></span> 0</span>
+                        
+                                                                                            </span>
+                </div><!-- .entry-meta -->
+                    </a>
+    </div>
+
+
+	<header class="entry-header">
+		<div class="entry-title"><a href="https://kali-linuks.ru/2018/06/16/kak-ustanovit-kali-linuks-na-virtualbox/" rel="bookmark" >Как установить Кали Линукс на VirtualBox</a></div>	</header><!-- .entry-header -->
+
+    	<div class="post-card__content">
+		Kali Linux – богатый софтом дистрибутив для пентеста (проверки на взлом). При этом установка	</div><!-- .entry-content -->
+    
+</div><!-- #post-## -->
+
+                
+                    
+<div id="post-193" class="post-card post-193 post type-post status-publish format-standard has-post-thumbnail  category-ustanovka">
+
+    <div class="post-card__image">
+        <a href="https://kali-linuks.ru/2018/06/09/kak-ustanovit-kali-linuks-na-fleshku/">
+                            <img width="330" height="140" src="https://kali-linuks.ru/wp-content/uploads/2018/06/5-330x140.jpg" class="attachment-thumb-wide size-thumb-wide wp-post-image" alt="" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/5-330x140.jpg 330w, https://kali-linuks.ru/wp-content/uploads/2018/06/5-770x330.jpg 770w" sizes="(max-width: 330px) 100vw, 330px" />            
+
+            
+                
+                <div class="entry-meta">
+                    <span class="entry-category"><span itemprop="articleSection">Установка</span></span>                    <span class="entry-meta__info">
+                                                <span class="entry-meta__comments" title="Комментариев"><span class="fa fa-comment-o"></span> 0</span>
+                        
+                                                                                            </span>
+                </div><!-- .entry-meta -->
+                    </a>
+    </div>
+
+
+	<header class="entry-header">
+		<div class="entry-title"><a href="https://kali-linuks.ru/2018/06/09/kak-ustanovit-kali-linuks-na-fleshku/" rel="bookmark" >Как установить Кали Линукс на флешку</a></div>	</header><!-- .entry-header -->
+
+    	<div class="post-card__content">
+		Дистрибутивов Линукс множество. И если Linux Mint больше подходит для поверхностного знакомства с миром	</div><!-- .entry-content -->
+    
+</div><!-- #post-## -->
+
+                
+                    
+<div id="post-124" class="post-card post-124 post type-post status-publish format-standard has-post-thumbnail  category-android">
+
+    <div class="post-card__image">
+        <a href="https://kali-linuks.ru/2018/06/09/ustanovka-kali-linuks-na-samsung-galaxy-s4-mini/">
+                            <img width="330" height="140" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_23-1-330x140.png" class="attachment-thumb-wide size-thumb-wide wp-post-image" alt="" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_23-1-330x140.png 330w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_23-1-770x330.png 770w" sizes="(max-width: 330px) 100vw, 330px" />            
+
+            
+                
+                <div class="entry-meta">
+                    <span class="entry-category"><span itemprop="articleSection">Андроид</span></span>                    <span class="entry-meta__info">
+                                                <span class="entry-meta__comments" title="Комментариев"><span class="fa fa-comment-o"></span> 0</span>
+                        
+                                                                                            </span>
+                </div><!-- .entry-meta -->
+                    </a>
+    </div>
+
+
+	<header class="entry-header">
+		<div class="entry-title"><a href="https://kali-linuks.ru/2018/06/09/ustanovka-kali-linuks-na-samsung-galaxy-s4-mini/" rel="bookmark" >Установка Кали Линукс на Samsung Galaxy S4 mini</a></div>	</header><!-- .entry-header -->
+
+    	<div class="post-card__content">
+		В мире тестирования на проникновения Kali Linux – признанный лидер. Дистрибутив отличается широким набором	</div><!-- .entry-content -->
+    
+</div><!-- #post-## -->
+
+                
+                    
+<div id="post-171" class="post-card post-171 post type-post status-publish format-standard has-post-thumbnail  category-android">
+
+    <div class="post-card__image">
+        <a href="https://kali-linuks.ru/2018/06/09/kak-skachat-i-ustanovit-kali-linuks-na-android/">
+                            <img width="330" height="140" src="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_20-2-330x140.png" class="attachment-thumb-wide size-thumb-wide wp-post-image" alt="" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_20-2-330x140.png 330w, https://kali-linuks.ru/wp-content/uploads/2018/06/Screenshot_20-2-770x330.png 770w" sizes="(max-width: 330px) 100vw, 330px" />            
+
+            
+                
+                <div class="entry-meta">
+                    <span class="entry-category"><span itemprop="articleSection">Андроид</span></span>                    <span class="entry-meta__info">
+                                                <span class="entry-meta__comments" title="Комментариев"><span class="fa fa-comment-o"></span> 0</span>
+                        
+                                                                                            </span>
+                </div><!-- .entry-meta -->
+                    </a>
+    </div>
+
+
+	<header class="entry-header">
+		<div class="entry-title"><a href="https://kali-linuks.ru/2018/06/09/kak-skachat-i-ustanovit-kali-linuks-na-android/" rel="bookmark" >Как скачать и установить Кали Линукс на Андроид</a></div>	</header><!-- .entry-header -->
+
+    	<div class="post-card__content">
+		Если хочется проверить ближайшее IT окружение на прочность, а под рукой только смартфон, пригодится	</div><!-- .entry-content -->
+    
+</div><!-- #post-## -->
+
+                
+                    
+<div id="post-366" class="post-card post-366 post type-post status-publish format-standard has-post-thumbnail  category-nastrojka">
+
+    <div class="post-card__image">
+        <a href="https://kali-linuks.ru/2018/06/19/kakoj-parol-po-umolchaniyu-v-kali-linuks/">
+                            <img width="330" height="140" src="https://kali-linuks.ru/wp-content/uploads/2018/06/6-330x140.png" class="attachment-thumb-wide size-thumb-wide wp-post-image" alt="" srcset="https://kali-linuks.ru/wp-content/uploads/2018/06/6-330x140.png 330w, https://kali-linuks.ru/wp-content/uploads/2018/06/6-770x330.png 770w" sizes="(max-width: 330px) 100vw, 330px" />            
+
+            
+                
+                <div class="entry-meta">
+                    <span class="entry-category"><span itemprop="articleSection">Настройка</span></span>                    <span class="entry-meta__info">
+                                                <span class="entry-meta__comments" title="Комментариев"><span class="fa fa-comment-o"></span> 0</span>
+                        
+                                                                                            </span>
+                </div><!-- .entry-meta -->
+                    </a>
+    </div>
+
+
+	<header class="entry-header">
+		<div class="entry-title"><a href="https://kali-linuks.ru/2018/06/19/kakoj-parol-po-umolchaniyu-v-kali-linuks/" rel="bookmark" >Какой пароль по умолчанию в Кали Линукс</a></div>	</header><!-- .entry-header -->
+
+    	<div class="post-card__content">
+		Иногда работать в Kali Linux не получается: у root пользователя по умолчанию используется парольный	</div><!-- .entry-content -->
+    
+</div><!-- #post-## -->
+
+                
+
+            </div>
+        </div>
+
+        
+
+    <meta itemprop="author" content="pyzakov">
+    <meta itemprop="datePublished" content="2018-06-15T07:53:11+00:00"/>
+<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://kali-linuks.ru/2018/06/15/ustanovka-kali-linuks-vmeste-s-windows-10/" content="Установка Кали Линукс вместе с Windows 10">
+<meta itemprop="dateModified" content="2018-07-11">
+<meta itemprop="datePublished" content="2018-06-15T07:53:11+00:00">
+
+<div id="comments" class="comments-area">
+
+			<div class="comments-title">Комментариев: 1</div>
+
+		
+		<ol class="comment-list">
+			    
+
+
+<li class="comment even thread-even depth-1" id="li-comment-375" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+    <div class="comment-box" id="comment-375">
+
+        <div class="comment-header">
+
+            <div class="comment-avatar">
+                <img alt='' src='https://secure.gravatar.com/avatar/75ef8134c3716d8e1d9c96f649fef192?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/75ef8134c3716d8e1d9c96f649fef192?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />            </div>
+
+            <div class="comment-meta">
+
+                <cite class="comment-author" itemprop="creator">INPGT</cite>
+                                
+                                    <time class="comment-time" itemprop="datePublished" datetime="2019-08-03">03.08.2019 в 13:26</time>
+                                
+            </div>
+
+        </div>
+
+        <div class="comment-body">
+                        <div class="comment-text" itemprop="text"><p>GRUB Не отображается, загружается сразу Windows 10</p>
+</div>
+            <div class="comment-footer">
+                <span rel='nofollow' class='comment-reply-link' data-href='#comment-375' onclick='return addComment.moveForm( "comment-375", "375", "respond", "252" )' aria-label='Комментарий к записи INPGT'>Ответить</span>            </div>
+        </div>
+    </div>
+
+    </li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+			<div id="respond" class="comment-respond">
+		<div id="reply-title" class="comment-reply-title">Добавить комментарий <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2018/06/15/ustanovka-kali-linuks-vmeste-s-windows-10/#respond" style="display:none;">Отменить ответ</a></small></div>			<form action="https://kali-linuks.ru/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-form-author"><label for="author">Имя <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245"  required='required' /></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100"  required='required' /></p>
+<p class="comment-form-url"><label for="url">Сайт</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-comment"><label for="comment">Комментарий</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><div class="comment-smiles js-comment-smiles"><img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/wink.png" alt=";-)"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/neutral.png" alt=":|"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/mad.png" alt=":x"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/twisted.png" alt=":twisted:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/smile.png" alt=":smile:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/eek.png" alt=":shock:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/sad.png" alt=":sad:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/rolleyes.png" alt=":roll:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/razz.png" alt=":razz:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/redface.png" alt=":oops:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/surprised.png" alt=":o"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/mrgreen.png" alt=":mrgreen:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/lol.png" alt=":lol:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/idea.png" alt=":idea:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/biggrin.png" alt=":grin:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/evil.png" alt=":evil:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/cry.png" alt=":cry:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/cool.png" alt=":cool:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/arrow.png" alt=":arrow:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/confused.png" alt=":???:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/question.png" alt=":?:"> <img src="https://kali-linuks.ru/wp-content/themes/root/images/smilies/exclaim.png" alt=":!:"> </div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Отправить комментарий" /> <input type='hidden' name='comment_post_ID' value='252' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="7c3572fdec" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="195"/></p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+</div><!-- micro -->
+
+
+
+<aside id="secondary" class="widget-area" itemscope itemtype="http://schema.org/WPSideBar">
+
+    
+	<div id="search-2" class="widget widget_search">
+<form role="search" method="get" id="searchform" action="https://kali-linuks.ru/" class="search-form">
+    <label class="screen-reader-text" for="s">Поиск: </label>
+    <input type="text" value="" name="s" id="s" class="search-form__text">
+    <button type="submit" id="searchsubmit" class="search-form__submit"></button>
+</form></div>		<div id="recent-posts-2" class="widget widget_recent_entries">		<div class="widget-header">Свежие записи</div>		<ul>
+											<li>
+					<a href="https://kali-linuks.ru/2018/06/19/kakoj-parol-po-umolchaniyu-v-kali-linuks/">Какой пароль по умолчанию в Кали Линукс</a>
+									</li>
+											<li>
+					<a href="https://kali-linuks.ru/2018/06/19/ustanovka-kali-linuks-live-usb/">Установка Кали Линукс Live USB</a>
+									</li>
+											<li>
+					<a href="https://kali-linuks.ru/2018/06/16/kak-ustanovit-kali-linuks-na-virtualbox/">Как установить Кали Линукс на VirtualBox</a>
+									</li>
+											<li>
+					<a href="https://kali-linuks.ru/2018/06/15/ustanovka-kali-linuks-vmeste-s-windows-10/">Установка Кали Линукс вместе с Windows 10</a>
+									</li>
+											<li>
+					<a href="https://kali-linuks.ru/2018/06/14/nastrojka-kali-linuks-posle-ustanovki-poshagovaya-instruktsiya/">Настройка Кали Линукс после установки: пошаговая инструкция</a>
+									</li>
+					</ul>
+		</div><div id="recent-comments-2" class="widget widget_recent_comments"><div class="widget-header">Свежие комментарии</div><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='https://passport.yandex.ru/profile?origin=browser_desktop_additional_login2' rel='external nofollow' class='url'>Dhzonik</a></span> к записи <a href="https://kali-linuks.ru/2018/06/14/nastrojka-kali-linuks-posle-ustanovki-poshagovaya-instruktsiya/#comment-385">Настройка Кали Линукс после установки: пошаговая инструкция</a></li><li class="recentcomments"><span class="comment-author-link">INPGT</span> к записи <a href="https://kali-linuks.ru/2018/06/15/ustanovka-kali-linuks-vmeste-s-windows-10/#comment-375">Установка Кали Линукс вместе с Windows 10</a></li><li class="recentcomments"><span class="comment-author-link">Роман</span> к записи <a href="https://kali-linuks.ru/2018/06/19/ustanovka-kali-linuks-live-usb/#comment-339">Установка Кали Линукс Live USB</a></li><li class="recentcomments"><span class="comment-author-link">Oleh</span> к записи <a href="https://kali-linuks.ru/2018/06/14/nastrojka-kali-linuks-posle-ustanovki-poshagovaya-instruktsiya/#comment-327">Настройка Кали Линукс после установки: пошаговая инструкция</a></li></ul></div>
+    
+</aside><!-- #secondary -->
+
+	</div><!-- #content -->
+
+    
+        <div class="footer-navigation container">
+        <div class="main-navigation-inner ">
+            <div class="menu-menyu2-container"><ul id="footer_menu" class="menu"><li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://kali-linuks.ru/politika-konfidentsialnosti/">Политика конфиденциальности</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://kali-linuks.ru/obratnaya-svyaz/">Обратная связь</a></li>
+</ul></div>        </div>
+    </div>
+
+
+
+    <footer class="site-footer container" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="site-footer-inner ">
+
+            <div class="footer-info">
+                ©2018 - 2021 kali-linuks.ru
+                <div class="footer-text">Сайт kali-linuks.ru не является официальным. Он носит исключительно информационный характер</div>            </div><!-- .site-info -->
+
+            
+            <div class="footer-counters">
+                            </div>
+
+        </div><!-- .site-footer-inner -->
+    </footer><!-- .site-footer -->
+
+
+            <button type="button" class="scrolltop js-scrolltop"></button>
+    
+
+</div><!-- #page -->
+
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ratingsL10n = {"plugin_url":"https:\/\/kali-linuks.ru\/wp-content\/plugins\/wp-postratings","ajax_url":"https:\/\/kali-linuks.ru\/wp-admin\/admin-ajax.php","text_wait":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043d\u0435 \u0433\u043e\u043b\u043e\u0441\u0443\u0439\u0442\u0435 \u0437\u0430 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0437\u0430\u043f\u0438\u0441\u0435\u0439 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e.","image":"stars","image_ext":"gif","max":"5","show_loading":"1","show_fading":"1","custom":"0"};
+var ratings_mouseover_image=new Image();ratings_mouseover_image.src="https://kali-linuks.ru/wp-content/plugins/wp-postratings/images/stars/rating_over.gif";;
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://kali-linuks.ru/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/wp-postratings/js/postratings-js.js,wp-content/themes/root/js/scripts.min.js,wp-includes/js/comment-reply.min.js,wp-content/plugins/q2w3-fixed-widget/js/q2w3-fixed-widget.min.js,wp-includes/js/wp-embed.min.js,wp-content/plugins/akismet/_inc/form.js'></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49196518 = new Ya.Metrika2({
+                    id:49196518,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49196518" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
